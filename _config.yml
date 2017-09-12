@@ -19,8 +19,8 @@ description: > # this means to ignore newlines until "baseurl:"
   I am a computer science student and aspiring software engineer. This site is where I chronicle the things I do and make. I love to create new things by learning new technologies and applying them, so I hope you can learn something new too!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+linkedin_username: dpmcpherson
+github_username:  devinmcpherson
 
 # Build settings
 markdown: kramdown
