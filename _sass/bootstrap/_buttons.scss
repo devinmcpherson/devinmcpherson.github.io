@@ -110,7 +110,6 @@ a.btn {
   &[disabled],
   fieldset[disabled] & {
     background-color: black;
-    @include box-shadow(0px);
   }
   &,
   &:hover,
@@ -123,14 +122,6 @@ a.btn {
     color: white;
     text-decoration: $link-hover-decoration;
     background-color: black;
-  }
-  &[disabled],
-  fieldset[disabled] & {
-    &:hover,
-    &:focus {
-      color: $btn-link-disabled-color;
-      text-decoration: none;
-    }
   }
 }
 
