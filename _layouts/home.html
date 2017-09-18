@@ -1,8 +1,22 @@
----
-layout: default
----
-
-<div class="home">
-    <h1 style="text-align: center">Devin McPherson</h1>
-    <h4 style="text-align: center">Student | Developer | Engineer</h4>
-</div>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include head.html %}
+<body>
+    {% include header.html %}
+    <div class="home">
+        <div class="jumbotron" style="background-image: url('../Grayscale-Geometric-Pattern-2400px.png');")>
+            <div class="flex-container center">
+                <div class="home-text">
+                    <p>Devin McPherson</p>
+                </div>
+            </div>
+            <div class="btn-container">
+                <div>
+                    <button type="button" class="btn-link btn-default btn-lg">About</button>
+                    <button type="button" class="btn-link btn-default btn-lg">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
