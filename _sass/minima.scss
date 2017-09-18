@@ -43,6 +43,10 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "bootstrap/mixins",
+  "bootstrap/variables",
+  "bootstrap/buttons",
+  "bootstrap/jumbotron",
   "minima/base",
   "minima/layout",
   "minima/syntax-highlighting"
