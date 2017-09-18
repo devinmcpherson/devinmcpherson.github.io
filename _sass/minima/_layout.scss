@@ -15,8 +15,8 @@
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
+  padding-top: 3px;
+  padding-bottom: 1px;
 
   &,
   &:visited {
@@ -202,8 +202,6 @@
   @include relative-font-size(1.5);
 }
 
-
-
 /**
  * Posts
  */
@@ -248,3 +246,75 @@
     }
   }
 }
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+  margin: auto;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    color: #fff;
+    font-family: $font-family-base;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+  }
+}
+
+.home-text {
+  @media screen and (max-width: 10000px) { /* screen size until 1200px */
+    p {
+      font-size: 2.5em; /* 1.5x default size */
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (max-width: 1000px) { /* screen size until 1000px */
+    p {
+      font-size: 1.8em; /* 1.2x default size */
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (max-width: 500px) { /* screen size until 500px */
+    p {
+      font-size: 1.3em; /* Default size */
+      margin-bottom: 0;
+    }
+  }
+}
+
+.btn-container {
+  -webkit-appearance: none;
+  display: -webkit-flex;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+
+  @media screen and (max-width: 10000px) { /* screen size until 1200px */
+    button {
+      width: 150px;
+      font-size: $font-size-large;
+    }
+  }
+  @media screen and (max-width: 1000px) { /* screen size until 1000px */
+    button {
+      width: 130px;
+      font-size: $font-size-base;
+    }
+  }
+  @media screen and (max-width: 500px) { /* screen size until 500px */
+    button {
+      width: 116px;
+      font-size: $font-size-small;
+    }
+  }
+}
+
